@@ -1,13 +1,14 @@
 import MovieCard  from "../components/MovieCard";
 import {useState} from "react"
+import "../css/Home.css"
 
 function Home() {
     const [searchQuery, setSearchQuery] = useState("");
 
     const movies = [
         {id: 1, title: "hi", release_date: "2004"},
-        {id: 2, title: "hi", release_date: "2004"},
-        {id: 3, title: "hi", release_date: "2004"}
+        {id: 2, title: "bye", release_date: "2004"},
+        {id: 3, title: "why", release_date: "2004"}
     ]
 
     const handleSearch = (e) => {
@@ -29,7 +30,7 @@ function Home() {
         </form>
         <div className="movies-grid">
             {movies.map((movie) => (
-            <MovieCard movie={movie} key={movie.id}/>
+                <MovieCard movie={movie} key={movie.id}/>
             ))}
         </div>
     </div>)

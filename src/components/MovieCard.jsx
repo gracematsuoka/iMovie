@@ -1,3 +1,5 @@
+import "../css/MovieCard.css"
+
 function MovieCard({movie}) {
 
     function onFavoriteClick() {
@@ -9,7 +11,7 @@ function MovieCard({movie}) {
             <img src={movie.url} alt={movie.title}></img>
             <div className="movie-overlay">
                 <button className="favorite-btn" onClick={onFavoriteClick}>
-                    🤍
+                    ♡
                 </button>
             </div>
         </div>
