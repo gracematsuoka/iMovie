@@ -12,15 +12,17 @@
   font-weight: bold;
 }
 
+
 .navbar-links {
   display: flex;
   gap: 2rem;
+  font-weight: normal;
 }
 
 .nav-link {
   font-size: 1rem;
   padding: 0.5rem 1rem;
-  border-radius: 4px;
+  border-radius: 50px;
   transition: background-color 0.2s;
 }
 
